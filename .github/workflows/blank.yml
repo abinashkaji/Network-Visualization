@@ -33,6 +33,12 @@ jobs:
             run: |
               echo Add other actions to build,
               echo test, and deploy your project.
+  Mac:
+    runs-on: macos-latest
+    steps:
+      - run: date
+        
+  
   depends:
     needs: [ubuntu, Windows]
     runs-on: ubuntu-latest
